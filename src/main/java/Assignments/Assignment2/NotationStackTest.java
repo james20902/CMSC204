@@ -1,3 +1,5 @@
+package Assignments.Assignment2;
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;

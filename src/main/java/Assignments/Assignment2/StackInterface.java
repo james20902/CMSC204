@@ -1,3 +1,5 @@
+package Assignments.Assignment2;
+
 import java.util.ArrayList;
 
 /** Interface for a generic Stack data structure
