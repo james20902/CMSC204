@@ -2,13 +2,13 @@ package Assignments.Assignment2;
 
 import java.util.ArrayList;
 
-public class NotationStack<T> implements StackInterface<T>{
+public class MyStack<T> implements StackInterface<T>{
 
     int initSize;
     int headIndex = -1;
     Object[] stackArray;
 
-    public NotationStack(int initSize){
+    public MyStack(int initSize){
         this.initSize = initSize;
         stackArray = new Object[initSize];
     }

@@ -2,13 +2,13 @@ package Assignments.Assignment2;
 
 import java.util.ArrayList;
 
-public class NotationQueue<T> implements QueueInterface<T> {
+public class MyQueue<T> implements QueueInterface<T> {
 
     int initSize;
     int tailIndex = -1;
     Object[] queueArray;
 
-    public NotationQueue(int initSize){
+    public MyQueue(int initSize){
         this.initSize = initSize;
         queueArray = new Object[initSize];
     }
@@ -29,7 +29,9 @@ public class NotationQueue<T> implements QueueInterface<T> {
             throw new QueueUnderflowException();
         }
         T head = (T)queueArray[0];
-        System.arraycopy(queueArray, 1, queueArray, 0, tailIndex);
+        for(int i = 0; i < tailIndex; i++){
+            queueArray[i] = queueArray[i+1];
+        }
         tailIndex--;
         return head;
     }
