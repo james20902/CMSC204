@@ -34,6 +34,9 @@ public class NotationStack<T> implements StackInterface<T>{
 
     @Override
     public T top() throws StackUnderflowException {
+        if(isEmpty()){
+            throw new StackUnderflowException();
+        }
         return (T)stackArray[headIndex];
     }
 

@@ -37,8 +37,8 @@ Assignments/Assignment1/PasswordCheckerTestPrivate.java
  Assignments.Assignment1.PasswordCheckerTestPrivate$7
 Assignments/Assignment1/PasswordCheckerTest_STUDENT.java
  Assignments.Assignment1.PasswordCheckerTest_STUDENT
-Assignments/Assignment2/NotationStack.java
- Assignments.Assignment2.NotationStack
+Assignments/Assignment2/MyStack.java
+ Assignments.Assignment2.MyStack
 Assignments/Assignment1/UnmatchedException.java
  Assignments.Assignment1.UnmatchedException
 Assignments/Assignment1/PasswordChecker_GFA_Test.java
@@ -67,8 +67,8 @@ Assignments/Assignment1/PasswordCheckerTestPublic.java
  Assignments.Assignment1.PasswordCheckerTestPublic$2
 Assignments/Assignment2/MyQueue.java
  Assignments.Assignment2.MyQueue
-Assignments/Assignment2/MyStack.java
- Assignments.Assignment2.MyStack
+Assignments/Assignment2/NotationStack.java
+ Assignments.Assignment2.NotationStack
 Assignments/Assignment2/NotationTest.java
  Assignments.Assignment2.NotationTest
 Assignments/Assignment2/Notation.java

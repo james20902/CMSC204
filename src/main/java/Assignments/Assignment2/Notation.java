@@ -2,40 +2,47 @@ package Assignments.Assignment2;
 
 public class Notation {
 
-    //todo fix
     public static String convertInfixToPostfix(String infix) throws InvalidNotationFormatException{
-        String[] expression = infix.split("");
-        NotationStack<String> stack = new NotationStack<>(expression.length);
-        NotationQueue<String> queue = new NotationQueue<>(expression.length);
-        for(String s : expression){
-            switch(s){
-                case " ":
+        char[] expression = infix.toCharArray();
+        NotationStack<Character> stack = new NotationStack<>(expression.length);
+        NotationQueue<Character> queue = new NotationQueue<>(expression.length);
+        for(char c : expression){
+            switch(c){
+                case ' ':
                     //do nothing
                     break;
-                case "(":
-                    stack.push(s);
+                case '(':
+                    stack.push(c);
                     break;
-                case ")":
-                    String stackPeekParenthesis;
-                    do {
-                        stackPeekParenthesis = stack.pop();
-                    } while (!stackPeekParenthesis.equals("("));
+                case ')':
+                    while(stack.top() != '(') {
+                        if(stack.isEmpty()){
+                            throw new InvalidNotationFormatException();
+                        } else {
+                            queue.enqueue(stack.pop());
+                        }
+                    }
+                    stack.pop();
                     break;
-                case "+":
-                case "-":
-                case "*":
-                case "/":
-                    String stackPeekOperator;
-                    boolean lowPrecedenceFlag = false;
-                    do {
-                        stackPeekOperator = stack.pop();
-                        queue.enqueue(stackPeekOperator);
-                    } while (stackPeekOperator.matches("[+*/-]"));
-                    stack.push(s);
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                    if (!queue.isEmpty()) {
+                        try{
+                            char top = stack.top();
+                            if ((c == '*' || c == '/') && (top == '+' || top == '-')) {
+                                queue.enqueue(stack.pop());
+                            }
+                        } catch (StackUnderflowException e){
+                            throw new InvalidNotationFormatException();
+                        }
+                    }
+                    stack.push(c);
                     break;
                 default:
-                    if(s.matches("[0-9]")){
-                        queue.enqueue(s);
+                    if(Character.isDigit(c)){
+                        queue.enqueue(c);
                     } else {
                         throw new InvalidNotationFormatException();
                     }
@@ -63,12 +70,10 @@ public class Notation {
                     if(stack.size() < 2){
                         throw new InvalidNotationFormatException();
                     } else {
-                        String a = stack.pop();
-                        String b = stack.pop();
+                        String right = stack.pop();
+                        String left = stack.pop();
                         buffer.append("(")
-                                .append(b)
-                                .append(s)
-                                .append(a)
+                                .append(left).append(s).append(right)
                                 .append(")");
                         stack.push(buffer.toString());
                         buffer.setLength(0);
@@ -119,6 +124,8 @@ public class Notation {
                 default:
                     if(s.equals("(") || s.matches("[0-9]")){
                         stack.push(s);
+                    } else {
+                        throw new InvalidNotationFormatException();
                     }
             }
         }
