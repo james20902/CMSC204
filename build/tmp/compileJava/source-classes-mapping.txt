@@ -69,7 +69,34 @@ Assignments/Assignment2/MyQueue.java
  Assignments.Assignment2.MyQueue
 Assignments/Assignment2/NotationStack.java
  Assignments.Assignment2.NotationStack
-Assignments/Assignment2/NotationTest.java
- Assignments.Assignment2.NotationTest
 Assignments/Assignment2/Notation.java
  Assignments.Assignment2.Notation
+Assignments/Assignment2/NotationTest.java
+ Assignments.Assignment2.NotationTest
+Assignments/Assignment3/DoubleLinkedListDriver.java
+ Assignments.Assignment3.DoubleLinkedListDriver
+ Assignments.Assignment3.DoubleLinkedListDriver$ButtonEventHandler
+ Assignments.Assignment3.DoubleLinkedListDriver$StringComparator
+Assignments/Assignment3/BasicDoubleLinkedList_GFA_Test.java
+ Assignments.Assignment3.BasicDoubleLinkedList_GFA_Test
+Assignments/Assignment3/BasicDoubleLinkedList.java
+ Assignments.Assignment3.BasicDoubleLinkedList
+ Assignments.Assignment3.BasicDoubleLinkedList$1
+ Assignments.Assignment3.BasicDoubleLinkedList$Node
+Assignments/Assignment3/BasicDoubleLinkedListTest.java
+ Assignments.Assignment3.BasicDoubleLinkedListTest
+ Assignments.Assignment3.BasicDoubleLinkedListTest$Car
+ Assignments.Assignment3.BasicDoubleLinkedListTest$CarComparator
+ Assignments.Assignment3.BasicDoubleLinkedListTest$DoubleComparator
+ Assignments.Assignment3.BasicDoubleLinkedListTest$StringComparator
+Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
+ Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test
+ Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test$StringComparator
+Assignments/Assignment3/SortedDoubleLinkedListTest.java
+ Assignments.Assignment3.SortedDoubleLinkedListTest
+ Assignments.Assignment3.SortedDoubleLinkedListTest$Car
+ Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
+Assignments/Assignment3/SortedDoubleLinkedList.java
+ Assignments.Assignment3.SortedDoubleLinkedList
