@@ -6,11 +6,11 @@ public class NotationStack<T> implements StackInterface<T>{
 
     int initSize;
     int headIndex = -1;
-    Object[] stackArray;
+    T[] stackArray;
 
     public NotationStack(int initSize){
         this.initSize = initSize;
-        stackArray = new Object[initSize];
+        stackArray = (T[])new Object[initSize];
     }
 
     @Override
@@ -29,7 +29,7 @@ public class NotationStack<T> implements StackInterface<T>{
             throw new StackUnderflowException();
         }
 
-        return (T)stackArray[headIndex--];
+        return stackArray[headIndex--];
     }
 
     @Override
@@ -37,7 +37,7 @@ public class NotationStack<T> implements StackInterface<T>{
         if(isEmpty()){
             throw new StackUnderflowException();
         }
-        return (T)stackArray[headIndex];
+        return stackArray[headIndex];
     }
 
     @Override

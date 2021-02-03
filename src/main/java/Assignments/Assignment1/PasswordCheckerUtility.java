@@ -48,7 +48,6 @@ public class PasswordCheckerUtility {
         }
     }
 
-    //todo double check
     public static boolean hasSameCharInSequence(String password) throws InvalidSequenceException{
         char[] arr = password.toCharArray();
         for(int i = 0; i < arr.length - 3; i++){

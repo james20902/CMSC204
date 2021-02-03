@@ -1,5 +1,3 @@
-package Assignments;
-
 import Assignments.Assignment1.PasswordDriverFX;
 
 public class Main {

@@ -6,11 +6,11 @@ public class NotationQueue<T> implements QueueInterface<T> {
 
     int initSize;
     int tailIndex = -1;
-    Object[] queueArray;
+    T[] queueArray;
 
     public NotationQueue(int initSize){
         this.initSize = initSize;
-        queueArray = new Object[initSize];
+        queueArray = (T[]) new Object[initSize];
     }
 
     @Override
@@ -28,7 +28,7 @@ public class NotationQueue<T> implements QueueInterface<T> {
         if(isEmpty()){
             throw new QueueUnderflowException();
         }
-        T head = (T)queueArray[0];
+        T head = queueArray[0];
         System.arraycopy(queueArray, 1, queueArray, 0, tailIndex);
         tailIndex--;
         return head;

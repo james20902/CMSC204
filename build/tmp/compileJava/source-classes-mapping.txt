@@ -1,31 +1,53 @@
 Assignments/Assignment1/WeakPasswordException.java
  Assignments.Assignment1.WeakPasswordException
-Assignments/Assignment1/NoLowerAlphaException.java
- Assignments.Assignment1.NoLowerAlphaException
+Assignments/Assignment2/NotationQueue.java
+ Assignments.Assignment2.NotationQueue
+Assignments/Assignment3/DoubleLinkedListDriver.java
+ Assignments.Assignment3.DoubleLinkedListDriver
+ Assignments.Assignment3.DoubleLinkedListDriver$ButtonEventHandler
+ Assignments.Assignment3.DoubleLinkedListDriver$StringComparator
 Assignments/Assignment2/QueueOverflowException.java
  Assignments.Assignment2.QueueOverflowException
-Assignments/Assignment2/NotationQueueTest.java
- Assignments.Assignment2.NotationQueueTest
+Assignments/Assignment2/NotationTest.java
+ Assignments.Assignment2.NotationTest
 Assignments/Assignment1/LengthException.java
  Assignments.Assignment1.LengthException
-Assignments/Assignment2/StackInterface.java
- Assignments.Assignment2.StackInterface
+Assignments/Assignment1/NoLowerAlphaException.java
+ Assignments.Assignment1.NoLowerAlphaException
+Assignments/Assignment2/NotationQueueTest.java
+ Assignments.Assignment2.NotationQueueTest
 Assignments/Assignment2/QueueUnderflowException.java
  Assignments.Assignment2.QueueUnderflowException
-Assignments/Assignment2/MyQueueTest.java
- Assignments.Assignment2.MyQueueTest
-Assignments/Main.java
- Assignments.Main
+Assignments/Assignment2/MyStack.java
+ Assignments.Assignment2.MyStack
+Assignments/Assignment3/BasicDoubleLinkedListTest.java
+ Assignments.Assignment3.BasicDoubleLinkedListTest
+ Assignments.Assignment3.BasicDoubleLinkedListTest$Car
+ Assignments.Assignment3.BasicDoubleLinkedListTest$CarComparator
+ Assignments.Assignment3.BasicDoubleLinkedListTest$DoubleComparator
+ Assignments.Assignment3.BasicDoubleLinkedListTest$StringComparator
 Assignments/Assignment1/NoSpecialCharacterException.java
  Assignments.Assignment1.NoSpecialCharacterException
 Assignments/Assignment1/PasswordMain.java
  Assignments.Assignment1.PasswordMain
+Labs/Lab2/BankAccount.java
+ Labs.Lab2.BankAccount
+Labs/Lab2/Measurable.java
+ Labs.Lab2.Measurable
+Assignments/Assignment3/BasicDoubleLinkedList_GFA_Test.java
+ Assignments.Assignment3.BasicDoubleLinkedList_GFA_Test
+Main.java
+ Main
+Assignments/Assignment3/BasicDoubleLinkedList.java
+ Assignments.Assignment3.BasicDoubleLinkedList
+ Assignments.Assignment3.BasicDoubleLinkedList$1
+ Assignments.Assignment3.BasicDoubleLinkedList$Node
 Assignments/Assignment1/InvalidSequenceException.java
  Assignments.Assignment1.InvalidSequenceException
-Assignments/Assignment1/PasswordDriverFX.java
- Assignments.Assignment1.PasswordDriverFX
-Assignments/Assignment2/NotationQueue.java
- Assignments.Assignment2.NotationQueue
+Assignments/Assignment2/NotationStack.java
+ Assignments.Assignment2.NotationStack
+Assignments/Assignment2/Notation.java
+ Assignments.Assignment2.Notation
 Assignments/Assignment1/PasswordCheckerTestPrivate.java
  Assignments.Assignment1.PasswordCheckerTestPrivate
  Assignments.Assignment1.PasswordCheckerTestPrivate$1
@@ -37,18 +59,27 @@ Assignments/Assignment1/PasswordCheckerTestPrivate.java
  Assignments.Assignment1.PasswordCheckerTestPrivate$7
 Assignments/Assignment1/PasswordCheckerTest_STUDENT.java
  Assignments.Assignment1.PasswordCheckerTest_STUDENT
-Assignments/Assignment2/MyStack.java
- Assignments.Assignment2.MyStack
+Assignments/Assignment2/MyStackTest.java
+ Assignments.Assignment2.MyStackTest
 Assignments/Assignment1/UnmatchedException.java
  Assignments.Assignment1.UnmatchedException
 Assignments/Assignment1/PasswordChecker_GFA_Test.java
  Assignments.Assignment1.PasswordChecker_GFA_Test
-Assignments/Assignment2/NotationStackTest.java
- Assignments.Assignment2.NotationStackTest
+Assignments/Assignment2/MyQueueTest.java
+ Assignments.Assignment2.MyQueueTest
 Assignments/Assignment1/NoDigitException.java
  Assignments.Assignment1.NoDigitException
+Assignments/Assignment3/SortedDoubleLinkedListTest.java
+ Assignments.Assignment3.SortedDoubleLinkedListTest
+ Assignments.Assignment3.SortedDoubleLinkedListTest$Car
+ Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
 Assignments/Assignment2/QueueInterface.java
  Assignments.Assignment2.QueueInterface
+Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
+ Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test
+ Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test$StringComparator
 Assignments/Assignment1/PasswordCheckerUtility.java
  Assignments.Assignment1.PasswordCheckerUtility
 Assignments/Assignment1/NoUpperAlphaException.java
@@ -57,46 +88,25 @@ Assignments/Assignment2/StackUnderflowException.java
  Assignments.Assignment2.StackUnderflowException
 Assignments/Assignment2/StackOverflowException.java
  Assignments.Assignment2.StackOverflowException
+Assignments/Assignment3/SortedDoubleLinkedList.java
+ Assignments.Assignment3.SortedDoubleLinkedList
+Labs/Lab2/BaseballPlayer.java
+ Labs.Lab2.BaseballPlayer
 Assignments/Assignment2/InvalidNotationFormatException.java
  Assignments.Assignment2.InvalidNotationFormatException
-Assignments/Assignment2/MyStackTest.java
- Assignments.Assignment2.MyStackTest
+Assignments/Assignment2/MyQueue.java
+ Assignments.Assignment2.MyQueue
 Assignments/Assignment1/PasswordCheckerTestPublic.java
  Assignments.Assignment1.PasswordCheckerTestPublic
  Assignments.Assignment1.PasswordCheckerTestPublic$1
  Assignments.Assignment1.PasswordCheckerTestPublic$2
-Assignments/Assignment2/MyQueue.java
- Assignments.Assignment2.MyQueue
-Assignments/Assignment2/NotationStack.java
- Assignments.Assignment2.NotationStack
-Assignments/Assignment2/Notation.java
- Assignments.Assignment2.Notation
-Assignments/Assignment2/NotationTest.java
- Assignments.Assignment2.NotationTest
-Assignments/Assignment3/DoubleLinkedListDriver.java
- Assignments.Assignment3.DoubleLinkedListDriver
- Assignments.Assignment3.DoubleLinkedListDriver$ButtonEventHandler
- Assignments.Assignment3.DoubleLinkedListDriver$StringComparator
-Assignments/Assignment3/BasicDoubleLinkedList_GFA_Test.java
- Assignments.Assignment3.BasicDoubleLinkedList_GFA_Test
-Assignments/Assignment3/BasicDoubleLinkedList.java
- Assignments.Assignment3.BasicDoubleLinkedList
- Assignments.Assignment3.BasicDoubleLinkedList$1
- Assignments.Assignment3.BasicDoubleLinkedList$Node
-Assignments/Assignment3/BasicDoubleLinkedListTest.java
- Assignments.Assignment3.BasicDoubleLinkedListTest
- Assignments.Assignment3.BasicDoubleLinkedListTest$Car
- Assignments.Assignment3.BasicDoubleLinkedListTest$CarComparator
- Assignments.Assignment3.BasicDoubleLinkedListTest$DoubleComparator
- Assignments.Assignment3.BasicDoubleLinkedListTest$StringComparator
-Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
- Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test
- Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test$StringComparator
-Assignments/Assignment3/SortedDoubleLinkedListTest.java
- Assignments.Assignment3.SortedDoubleLinkedListTest
- Assignments.Assignment3.SortedDoubleLinkedListTest$Car
- Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
- Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
- Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
-Assignments/Assignment3/SortedDoubleLinkedList.java
- Assignments.Assignment3.SortedDoubleLinkedList
+Assignments/Assignment1/PasswordDriverFX.java
+ Assignments.Assignment1.PasswordDriverFX
+Assignments/Assignment2/NotationStackTest.java
+ Assignments.Assignment2.NotationStackTest
+Assignments/Assignment2/StackInterface.java
+ Assignments.Assignment2.StackInterface
+Labs/Lab2/DataSetGen.java
+ Labs.Lab2.DataSetGen
+Labs/Lab2/DataSetTester.java
+ Labs.Lab2.DataSetTester
