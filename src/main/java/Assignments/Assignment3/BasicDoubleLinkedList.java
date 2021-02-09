@@ -61,35 +61,51 @@ public class BasicDoubleLinkedList<T> {
         return head.data;
     }
 
+    public Node<T> getFirstNode(){
+        return head;
+    }
+
     public T getLast(){
         return tail.data;
     }
 
     public ListIterator<T> iterator() throws UnsupportedOperationException,
                                                 NoSuchElementException{
-        return new ListIterator<T>() {
-            Node<T> storage;
+        return new ListIterator<>() {
+            Node<T> storage = new Node<>(null);
 
             @Override
             public boolean hasNext() {
-                return tail.data != null;
+                return storage.back != null;
             }
 
             @Override
-            public T next() {
-                storage = storage.back;
-                return storage.data;
+            public T next() throws NoSuchElementException{
+                if(!hasNext()){
+                    throw new NoSuchElementException();
+                }
+                T queueStorage = storage.data;
+                if(storage.back != null){
+                    storage = storage.back;
+                }
+                return queueStorage;
             }
 
             @Override
             public boolean hasPrevious() {
-                return head.data != null;
+                System.out.println("current: " + storage.data);
+                System.out.println("previous: " + storage.front.data);
+                return storage.front != null;
             }
 
             @Override
-            public T previous() {
+            public T previous() throws NoSuchElementException{
+                if(!hasPrevious()){
+                    throw new NoSuchElementException();
+                }
+                T queueStorage = storage.data;
                 storage = storage.front;
-                return storage.data;
+                return queueStorage;
             }
 
             @Override
@@ -125,8 +141,16 @@ public class BasicDoubleLinkedList<T> {
             storage = head;
             while(storage != null){
                 if(comparator.compare(targetData, storage.data) == 0){
-                    storage.back.front = storage.front;
-                    storage.front.back = storage.back;
+                    if(storage == head){
+                        head = head.front;
+                    } else if(storage == tail){
+                        tail = tail.back;
+                        tail.front = null;
+                    } else {
+                        storage.back.front = storage.front;
+                        storage.front.back = storage.back;
+                    }
+                    index--;
                     break;
                 }
                 storage = storage.front;
@@ -145,8 +169,11 @@ public class BasicDoubleLinkedList<T> {
 
     public ArrayList<T> toArrayList(){
         ArrayList<T> list = new ArrayList<>();
-        while(iterator().hasNext()){
-            list.add(iterator().next());
+        ListIterator<T> iterator = iterator();
+        while(iterator.hasNext()){
+            T val = iterator.next();
+            System.out.println(val);
+            list.add(val);
         }
         return list;
     }

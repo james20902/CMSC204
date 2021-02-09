@@ -1,5 +1,10 @@
 package Assignments.Assignment1;
 
+/**
+ * Thrown to notify classes that a password has more than two characters in sequence
+ *
+ * @author James Pham
+ */
 public class InvalidSequenceException extends RuntimeException{
 
     public InvalidSequenceException(){

@@ -13,19 +13,52 @@ import org.junit.Test;
 
 /**
  * STUDENT tests for the methods of PasswordChecker
- * @author 
+ * @author James Pham
  *
  */
 public class PasswordCheckerTest_STUDENT {
 
+	ArrayList<String> startingList;
+	ArrayList<String> filteredList;
+	String failLength = "abcde";
+	String passLengthFailUpper = "abcdefghij";
+	String passUpperFailLower = "ABCDE";
+	String passLowerFailWeak = "4bc~deFGHI";
+	String passWeak = "4BCd~eF";
+	String failSequence =  "aaaBceeeee1~";
+	String passSequenceFailDigit = "abcdef";
+	String passDigitFailValid = "1234ABc";
+	String passValid = "th1sIsASecureP4ssw.rd";
+
 	@Before
 	public void setUp() throws Exception {
-		
+		startingList = new ArrayList<>(
+				Arrays.asList(failLength,
+						passValid,
+						"AnotherSecur3~pword",
+						"anothersecur3~pword",
+						"ANOTHERSECUR3~PWORD",
+						"Someth1ngPasswordR*lated",
+						"AbAbAbAb",
+						passDigitFailValid,
+						"YayyAnother~~longPassw0rd123",
+						failSequence)
+		);
+
+		filteredList = new ArrayList<>(
+			Arrays.asList(failLength + " -> The password must be at least 6 characters long",
+					"anothersecur3~pword -> The password must contain at least one uppercase alphabetic character",
+					"ANOTHERSECUR3~PWORD -> The password must contain at least one lower case alphabetic character",
+					"AbAbAbAb -> The password must contain at least one digit",
+					passDigitFailValid + " -> The password must contain at least one special character",
+					failSequence + " -> The password cannot contain more than two of the same character in sequence")
+		);
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	
+		startingList = null;
+		filteredList = null;
 	}
 
 	/**
@@ -33,9 +66,12 @@ public class PasswordCheckerTest_STUDENT {
 	 * This test should throw a LengthException for second case.
 	 */
 	@Test
-	public void testIsValidPasswordTooShort()
-	{
-		fail("Not implemented by student yet");
+	public void testIsValidPasswordTooShort() {
+		assertThrows("The password must be at least 6 characters long",
+				LengthException.class,
+				() -> PasswordCheckerUtility.isValidLength(failLength));
+
+		assertTrue(PasswordCheckerUtility.isValidLength(passLengthFailUpper));
 	}
 	
 	/**
@@ -43,9 +79,12 @@ public class PasswordCheckerTest_STUDENT {
 	 * This test should throw a NoUpperAlphaException for second case
 	 */
 	@Test
-	public void testIsValidPasswordNoUpperAlpha()
-	{
-		fail("Not implemented by student yet");
+	public void testIsValidPasswordNoUpperAlpha() {
+		assertThrows("The password must contain at least one uppercase alphabetic character",
+				NoUpperAlphaException.class,
+				() -> PasswordCheckerUtility.hasUpperAlpha(passLengthFailUpper));
+
+		assertTrue(PasswordCheckerUtility.hasUpperAlpha(passUpperFailLower));
 	}
 	
 	/**
@@ -53,18 +92,24 @@ public class PasswordCheckerTest_STUDENT {
 	 * This test should throw a NoLowerAlphaException for second case
 	 */
 	@Test
-	public void testIsValidPasswordNoLowerAlpha()
-	{
-		fail("Not implemented by student yet");
+	public void testIsValidPasswordNoLowerAlpha() {
+		assertThrows("The password must contain at least one lowercase alphabetic character",
+				NoLowerAlphaException.class,
+				() -> PasswordCheckerUtility.hasLowerAlpha(passUpperFailLower));
+
+		assertTrue(PasswordCheckerUtility.hasLowerAlpha(passLowerFailWeak));
 	}
 	/**
-	 * Test if the password has more than 2 of the same character in sequence
+	 * Test if the password is valid but is no longer than nine characters
 	 * This test should throw a InvalidSequenceException for second case
 	 */
 	@Test
-	public void testIsWeakPassword()
-	{
-		fail("Not implemented by student yet");
+	public void testIsWeakPassword() {
+		assertThrows("The password is OK but weak - it contains fewer than 10 characters.",
+				WeakPasswordException.class,
+				() -> PasswordCheckerUtility.isWeakPassword(passLowerFailWeak));
+
+		assertTrue(PasswordCheckerUtility.isWeakPassword(passWeak));
 	}
 	
 	/**
@@ -72,9 +117,12 @@ public class PasswordCheckerTest_STUDENT {
 	 * This test should throw a InvalidSequenceException for second case
 	 */
 	@Test
-	public void testIsValidPasswordInvalidSequence()
-	{
-		fail("Not implemented by student yet");
+	public void testIsValidPasswordInvalidSequence() {
+		assertThrows("The password cannot contain more than two of the same character in sequence",
+				InvalidSequenceException.class,
+				() -> PasswordCheckerUtility.hasSameCharInSequence(failSequence));
+
+		assertTrue(PasswordCheckerUtility.hasSameCharInSequence(passSequenceFailDigit));
 	}
 	
 	/**
@@ -82,9 +130,12 @@ public class PasswordCheckerTest_STUDENT {
 	 * One test should throw a NoDigitException
 	 */
 	@Test
-	public void testIsValidPasswordNoDigit()
-	{
-		fail("Not implemented by student yet");
+	public void testIsValidPasswordNoDigit() {
+		assertThrows("The password must contain at least one digit",
+				NoDigitException.class,
+				() -> PasswordCheckerUtility.hasDigit(passSequenceFailDigit));
+
+		assertTrue(PasswordCheckerUtility.hasDigit(passDigitFailValid));
 	}
 	
 	/**
@@ -94,7 +145,10 @@ public class PasswordCheckerTest_STUDENT {
 	@Test
 	public void testIsValidPasswordSuccessful()
 	{
-		fail("Not implemented by student yet");
+		assertThrows(RuntimeException.class,
+				() -> PasswordCheckerUtility.isValidPassword(passDigitFailValid));
+
+		assertTrue(PasswordCheckerUtility.isValidPassword(passValid));
 	}
 	
 	/**
@@ -103,7 +157,9 @@ public class PasswordCheckerTest_STUDENT {
 	 */
 	@Test
 	public void testInvalidPasswords() {
-		fail("Not implemented by student yet");
+		assertEquals(PasswordCheckerUtility.getInvalidPasswords(startingList), filteredList);
+		filteredList.remove(0);
+		assertNotEquals(PasswordCheckerUtility.getInvalidPasswords(startingList), filteredList);
 	}
 	
 }
