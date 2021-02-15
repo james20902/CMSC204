@@ -114,3 +114,7 @@ Labs/Lab3/GradeBook.java
  Labs.Lab3.GradeBook
 Labs/Lab3/GradebookTester.java
  Labs.Lab3.GradebookTester
+Labs/Lab4/ArraySum.java
+ Labs.Lab4.ArraySum
+Labs/Lab4/ArraySumDriver.java
+ Labs.Lab4.ArraySumDriver
