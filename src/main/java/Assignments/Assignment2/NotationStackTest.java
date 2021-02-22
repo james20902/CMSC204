@@ -12,10 +12,9 @@ public class NotationStackTest {
 	public NotationStack<String> stringS;
 	public String a="a", b="b", c="c", d="d", e="e", f="f";
 	public ArrayList<String> fill = new ArrayList<String>();
-	
-	// STUDENT: student tests will use the doubleS
+
 	public NotationStack<Double> doubleS;
-	// STUDENT: add variables as needed for your student tests
+	public double val1 = 3, val2 = 21, val3 = 39.5, val4 = 80, val5 = 76.1;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -23,8 +22,11 @@ public class NotationStackTest {
 		stringS.push(a);
 		stringS.push(b);
 		stringS.push(c);
-		
-		//STUDENT: add setup for doubleS for student tests
+
+		doubleS = new NotationStack<>(5);
+		doubleS.push(val1);
+		doubleS.push(val2);
+		doubleS.push(val3);
 	}
 
 	@After
@@ -70,8 +72,10 @@ public class NotationStackTest {
 
 	@Test
 	public void testPopStudent() {
-		//Use the doubleQ for student tests
-		fail("Not yet implemented");
+		assertEquals(val3, doubleS.pop(), 0);
+		assertEquals(val2, doubleS.pop(), 0);
+		assertEquals(val1, doubleS.pop(), 0);
+		assertThrows(StackUnderflowException.class, doubleS::pop);
 	}
 	
 	@Test
@@ -116,8 +120,13 @@ public class NotationStackTest {
 
 	@Test
 	public void testPushStudent() {
-		//Use the doubleQ for student tests
-		fail("Not yet implemented");
+		assertEquals(3, doubleS.size(), 0);
+		assertTrue(doubleS.push(val4));
+		assertEquals(4, doubleS.size(), 0);
+		assertTrue(doubleS.push(val5));
+		assertEquals(5, doubleS.size(), 0);
+
+		assertThrows(StackOverflowException.class, () -> doubleS.push(1.0));
 	}
 	
 	@Test
@@ -131,8 +140,12 @@ public class NotationStackTest {
 
 	@Test
 	public void testToStringStudent() {
-		//Use the doubleQ for student tests
-		fail("Not yet implemented");
+		String val1Box = Double.toString(val1);
+		assertEquals(val1Box + val2 + val3, doubleS.toString());
+		doubleS.push(val4);
+		assertEquals(val1Box + val2 + val3 + val4, doubleS.toString());
+		doubleS.push(val5);
+		assertEquals(val1Box + val2 + val3 + val4 + val5, doubleS.toString());
 	}
 	
 	@Test

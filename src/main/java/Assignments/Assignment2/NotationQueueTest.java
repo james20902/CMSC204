@@ -13,9 +13,8 @@ public class NotationQueueTest {
 	public String a="a", b="b", c="c", d="d", e="e", f="f";
 	public ArrayList<String> fill = new ArrayList<String>();
 	
-	// STUDENT: student tests will use the doubleQ
 	public NotationQueue<Double> doubleQ;
-	// STUDENT: add variables as needed for your student tests
+	public double val1 = 3, val2 = 21, val3 = 39.5, val4 = 80, val5 = 76.1;
 
 	@Before
 	public void setUp() throws Exception {
@@ -23,8 +22,11 @@ public class NotationQueueTest {
 		stringQ.enqueue(a);
 		stringQ.enqueue(b);
 		stringQ.enqueue(c);
-		
-		//STUDENT: add setup for doubleQ for student tests
+
+		doubleQ = new NotationQueue<>(5);
+		doubleQ.enqueue(val1);
+		doubleQ.enqueue(val2);
+		doubleQ.enqueue(val3);
 	}
 
 	@After
@@ -62,8 +64,10 @@ public class NotationQueueTest {
 	
 	@Test
 	public void testDequeueStudent() {
-		//Use the doubleQ for student tests
-		fail("Not yet implemented");
+		assertEquals(val1, doubleQ.dequeue(), 0);
+		assertEquals(val2, doubleQ.dequeue(), 0);
+		assertEquals(val3, doubleQ.dequeue(), 0);
+		assertThrows(QueueUnderflowException.class, doubleQ::dequeue);
 	}
 
 	@Test
@@ -98,8 +102,13 @@ public class NotationQueueTest {
 
 	@Test
 	public void testEnqueueStudent() {
-		//Use the doubleQ for student tests
-		fail("Not yet implemented");
+		assertEquals(3, doubleQ.size(), 0);
+		assertTrue(doubleQ.enqueue(val4));
+		assertEquals(4, doubleQ.size(), 0);
+		assertTrue(doubleQ.enqueue(val5));
+		assertEquals(5, doubleQ.size(), 0);
+
+		assertThrows(QueueOverflowException.class, () -> doubleQ.enqueue(1.0));
 	}
 
 	@Test
@@ -121,8 +130,12 @@ public class NotationQueueTest {
 	
 	@Test
 	public void testToStringStudent() {
-		//Use the doubleQ for student tests
-		fail("Not yet implemented");
+		String val1Box = Double.toString(val1);
+		assertEquals(val1Box + val2 + val3, doubleQ.toString());
+		doubleQ.enqueue(val4);
+		assertEquals(val1Box + val2 + val3 + val4, doubleQ.toString());
+		doubleQ.enqueue(val5);
+		assertEquals(val1Box + val2 + val3 + val4 + val5, doubleQ.toString());
 	}
 
 	@Test
