@@ -76,36 +76,22 @@ public class BasicDoubleLinkedList<T> {
 
             @Override
             public boolean hasNext() {
-                return storage.back != null;
+                return false;
             }
 
             @Override
             public T next() throws NoSuchElementException{
-                if(!hasNext()){
-                    throw new NoSuchElementException();
-                }
-                T queueStorage = storage.data;
-                if(storage.back != null){
-                    storage = storage.back;
-                }
-                return queueStorage;
+                return null;
             }
 
             @Override
             public boolean hasPrevious() {
-                System.out.println("current: " + storage.data);
-                System.out.println("previous: " + storage.front.data);
-                return storage.front != null;
+                return false;
             }
 
             @Override
             public T previous() throws NoSuchElementException{
-                if(!hasPrevious()){
-                    throw new NoSuchElementException();
-                }
-                T queueStorage = storage.data;
-                storage = storage.front;
-                return queueStorage;
+                return null;
             }
 
             @Override

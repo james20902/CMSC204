@@ -87,12 +87,18 @@ public class GradeBook
 
    @Override
    public String toString(){
-      StringBuilder builder = new StringBuilder();
-      for(int i = 0; i < scoresSize - 1; i++){
-         builder.append(scores[i]).append(" ");
+//      StringBuilder builder = new StringBuilder();
+//      for(int i = 0; i < scoresSize - 1; i++){
+//         builder.append(scores[i]).append(" ");
+//      }
+//      builder.append(scores[scoresSize - 1]);
+//      return builder.toString();
+
+      String scoresList = "";
+      for(double x : scores){
+         scoresList += Double.toString(x) + " ";
       }
-      builder.append(scores[scoresSize - 1]);
-      return builder.toString();
+      return scoresList;
    }
 }
 
