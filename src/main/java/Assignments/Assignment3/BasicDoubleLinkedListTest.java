@@ -75,17 +75,6 @@ public class BasicDoubleLinkedListTest {
 		linkedCar.addToEnd(d);
 		assertEquals(d,linkedCar.getLast());
 	}
-
-	@Test
-	public void testSomething(){
-		BasicDoubleLinkedList<String> dum = new BasicDoubleLinkedList<>();
-		dum.addToFront("a");
-		dum.addToEnd("b");
-		System.out.println("storage: " + dum.getFirst());
-		System.out.println("storage back: " + dum.getFirstNode().back.data);
-		assertEquals("a", dum.getFirst());
-		assertEquals("b", dum.getLast());
-	}
 	
 	@Test
 	public void testAddToFront() {
@@ -196,6 +185,7 @@ public class BasicDoubleLinkedListTest {
 		}
 		catch (Exception e)
 		{
+			e.printStackTrace();
 			assertTrue("Threw an exception other than the NoSuchElementException", false);
 		}
 		

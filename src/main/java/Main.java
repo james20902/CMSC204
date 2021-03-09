@@ -47,6 +47,11 @@ public class Main {
                 .append(stripped[6][5])
                 .append(stripped[12][13]);
         System.out.println(buffer.toString());
+        System.out.println(nullPrint(null));
+    }
+
+    public static String nullPrint(Object val){
+        return val != null ? val.toString() : "null";
     }
 
 
