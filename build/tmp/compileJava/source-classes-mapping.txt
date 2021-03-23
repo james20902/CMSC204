@@ -1,17 +1,29 @@
 Assignments/Assignment2/NotationQueue.java
  Assignments.Assignment2.NotationQueue
+Assignments/Assignment4/CourseDBStructureInterface.java
+ Assignments.Assignment4.CourseDBStructureInterface
 Assignments/Assignment1/LengthException.java
  Assignments.Assignment1.LengthException
 Labs/Lab2/DataSetTester.java
  Labs.Lab2.DataSetTester
 Labs/Lab4/ArraySum.java
  Labs.Lab4.ArraySum
+Assignments/Assignment1/PasswordCheckerTestPublic.java
+ Assignments.Assignment1.PasswordCheckerTestPublic
+ Assignments.Assignment1.PasswordCheckerTestPublic$1
+ Assignments.Assignment1.PasswordCheckerTestPublic$2
 Assignments/Assignment1/PasswordMain.java
  Assignments.Assignment1.PasswordMain
+Assignments/Assignment4/CourseDBManagerTest.java
+ Assignments.Assignment4.CourseDBManagerTest
 Assignments/Assignment3/BasicDoubleLinkedList_GFA_Test.java
  Assignments.Assignment3.BasicDoubleLinkedList_GFA_Test
 Assignments/Assignment2/NotationStack.java
  Assignments.Assignment2.NotationStack
+Assignments/Assignment3/BasicDoubleLinkedList_STUDENT_Test.java
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$Matrix
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$MatrixComparator
 Assignments/Assignment2/Notation.java
  Assignments.Assignment2.Notation
 Lecture/CircleDriver.java
@@ -30,9 +42,8 @@ Labs/Lab2/DataSetGen.java
  Labs.Lab2.DataSetGen
 Assignments/Assignment2/QueueInterface.java
  Assignments.Assignment2.QueueInterface
-Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
- Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test
- Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test$StringComparator
+Assignments/Assignment4/CourseDBManager_GFA_Test.java
+ Assignments.Assignment4.CourseDBManager_GFA_Test
 Assignments/Assignment1/PasswordCheckerUtility.java
  Assignments.Assignment1.PasswordCheckerUtility
 Lecture/Circle.java
@@ -47,12 +58,16 @@ Assignments/Assignment1/PasswordDriverFX.java
  Assignments.Assignment1.PasswordDriverFX
 Labs/Lab5/HashingLab.java
  Labs.Lab5.HashingLab
+Assignments/Assignment2/StackInterface.java
+ Assignments.Assignment2.StackInterface
 Assignments/Assignment1/WeakPasswordException.java
  Assignments.Assignment1.WeakPasswordException
-Assignments/Assignment3/DoubleLinkedListDriver.java
- Assignments.Assignment3.DoubleLinkedListDriver
- Assignments.Assignment3.DoubleLinkedListDriver$ButtonEventHandler
- Assignments.Assignment3.DoubleLinkedListDriver$StringComparator
+Assignments/Assignment4/FXMainPane.java
+ Assignments.Assignment4.FXMainPane
+ Assignments.Assignment4.FXMainPane$ButtonHandler
+ Assignments.Assignment4.FXMainPane$RadioListener
+Assignments/Assignment4/CourseDBGUI.java
+ Assignments.Assignment4.CourseDBGUI
 Assignments/Assignment2/QueueOverflowException.java
  Assignments.Assignment2.QueueOverflowException
 Assignments/Assignment2/NotationTest.java
@@ -67,10 +82,10 @@ Assignments/Assignment3/BasicDoubleLinkedListTest.java
  Assignments.Assignment3.BasicDoubleLinkedListTest$CarComparator
  Assignments.Assignment3.BasicDoubleLinkedListTest$DoubleComparator
  Assignments.Assignment3.BasicDoubleLinkedListTest$StringComparator
-Assignments/Assignment3/SortedDoubleLinkedList_STUDENT_Test.java
- Assignments.Assignment3.SortedDoubleLinkedList_STUDENT_Test
- Assignments.Assignment3.SortedDoubleLinkedList_STUDENT_Test$Matrix
- Assignments.Assignment3.SortedDoubleLinkedList_STUDENT_Test$MatrixComparator
+Assignments/Assignment4/CourseDBManager.java
+ Assignments.Assignment4.CourseDBManager
+Assignments/Assignment4/CourseDBStructure.java
+ Assignments.Assignment4.CourseDBStructure
 Labs/Lab4/ArraySumDriver.java
  Labs.Lab4.ArraySumDriver
 Assignments/Assignment1/NoSpecialCharacterException.java
@@ -96,31 +111,38 @@ Assignments/Assignment1/PasswordCheckerTestPrivate.java
  Assignments.Assignment1.PasswordCheckerTestPrivate$5
  Assignments.Assignment1.PasswordCheckerTestPrivate$6
  Assignments.Assignment1.PasswordCheckerTestPrivate$7
+Assignments/Assignment2/NotationStackTest.java
+ Assignments.Assignment2.NotationStackTest
+Assignments/Assignment1/NoLowerAlphaException.java
+ Assignments.Assignment1.NoLowerAlphaException
 Assignments/Assignment2/StackUnderflowException.java
  Assignments.Assignment2.StackUnderflowException
 Assignments/Assignment2/StackOverflowException.java
  Assignments.Assignment2.StackOverflowException
-Assignments/Assignment3/SortedDoubleLinkedList.java
- Assignments.Assignment3.SortedDoubleLinkedList
+Assignments/Assignment4/CourseDBStructureTest.java
+ Assignments.Assignment4.CourseDBStructureTest
 Labs/Lab3/GradeBook.java
  Labs.Lab3.GradeBook
-Assignments/Assignment1/PasswordCheckerTestPublic.java
- Assignments.Assignment1.PasswordCheckerTestPublic
- Assignments.Assignment1.PasswordCheckerTestPublic$1
- Assignments.Assignment1.PasswordCheckerTestPublic$2
-Assignments/Assignment2/NotationStackTest.java
- Assignments.Assignment2.NotationStackTest
-Assignments/Assignment2/StackInterface.java
- Assignments.Assignment2.StackInterface
-Assignments/Assignment1/NoLowerAlphaException.java
- Assignments.Assignment1.NoLowerAlphaException
-Assignments/Assignment3/BasicDoubleLinkedList_STUDENT_Test.java
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$Matrix
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$MatrixComparator
+Assignments/Assignment4/CourseDBManagerInterface.java
+ Assignments.Assignment4.CourseDBManagerInterface
+Assignments/Assignment4/CourseDBElement.java
+ Assignments.Assignment4.CourseDBElement
+Assignments/Assignment3/DoubleLinkedListDriver.java
+ Assignments.Assignment3.DoubleLinkedListDriver
+ Assignments.Assignment3.DoubleLinkedListDriver$ButtonEventHandler
+ Assignments.Assignment3.DoubleLinkedListDriver$StringComparator
+Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
+ Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test
+ Assignments.Assignment3.SortedDoubleLinkedList_GFA_Test$StringComparator
+Assignments/Assignment3/SortedDoubleLinkedList_STUDENT_Test.java
+ Assignments.Assignment3.SortedDoubleLinkedList_STUDENT_Test
+ Assignments.Assignment3.SortedDoubleLinkedList_STUDENT_Test$Matrix
+ Assignments.Assignment3.SortedDoubleLinkedList_STUDENT_Test$MatrixComparator
 Assignments/Assignment3/SortedDoubleLinkedListTest.java
  Assignments.Assignment3.SortedDoubleLinkedListTest
  Assignments.Assignment3.SortedDoubleLinkedListTest$Car
  Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
  Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
  Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
+Assignments/Assignment3/SortedDoubleLinkedList.java
+ Assignments.Assignment3.SortedDoubleLinkedList

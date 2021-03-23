@@ -58,7 +58,7 @@ public class SortedDoubleLinkedList<T> extends BasicDoubleLinkedList<T>{
      */
     @Override
     public BasicDoubleLinkedList<T> addToEnd(T data) throws UnsupportedOperationException{
-        throw new UnsupportedOperationException("Invalid operation for sorted list.");
+        throw new UnsupportedOperationException("Invalid operation for sorted list");
     }
 
     /**
