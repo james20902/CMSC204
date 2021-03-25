@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"Assignments.Assignment4","l":"CourseDBElement"},{"p":"Assignments.Assignment4","l":"CourseDBManager"},{"p":"Assignments.Assignment4","l":"CourseDBStructure"}]

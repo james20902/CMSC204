@@ -1,0 +1,4 @@
+CHEM135 12345 4 Distance-Learning Abner Mintz
+MATH182 54231 4 Distance-Learning Jason Lee
+ENES100 33456 3 Distance-Learning Craig Garrison-Mogren
+ENGL102 91283 3 Distance-Learning Megan Howard
