@@ -8,18 +8,14 @@ import java.util.Arrays;
 
 public class MorseCodeConverter {
 
-    private static MorseCodeTree tree;
+    private static MorseCodeTree tree = new MorseCodeTree();
 
-    public MorseCodeConverter(){
-        tree = new MorseCodeTree();
-    }
+    public MorseCodeConverter(){ }
 
     public static String convertToEnglish(File codeFile) throws FileNotFoundException {
         StringBuilder buffer = new StringBuilder();
         BufferedReader reader = new BufferedReader(new FileReader(codeFile));
-        reader.lines().forEach((String s) -> {
-            buffer.append(convertToEnglish(s));
-        });
+        reader.lines().forEach((String s) -> buffer.append(convertToEnglish(s)));
         return buffer.toString();
     }
 
@@ -27,19 +23,20 @@ public class MorseCodeConverter {
         StringBuilder buffer = new StringBuilder();
         String[] words = code.split("/");
         for(String letters : words){
-            
-        }
-        String[] letters = code.split(" ");
-        for(String letter : letters){
-            for(String character : letter.split("")){
-                buffer.append(tree.fetch(character));
+            for(String letter : letters.strip().split(" ")){
+                buffer.append(tree.fetch(letter));
             }
+            buffer.append(" ");
         }
-        return buffer.toString();
+        return buffer.toString().stripTrailing();
     }
 
     public static String printTree(){
-        return tree.toArrayList().toString();
+        StringBuilder buffer = new StringBuilder();
+        for(String val : tree.toArrayList()){
+            buffer.append(val).append(" ");
+        }
+        return buffer.toString();
     }
 
 

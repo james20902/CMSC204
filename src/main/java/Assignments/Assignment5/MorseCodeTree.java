@@ -7,6 +7,7 @@ public class MorseCodeTree implements LinkedConverterTreeInterface<String>{
     TreeNode<String> root;
 
     public MorseCodeTree(){
+        setRoot(new TreeNode<>(""));
         buildTree();
     }
 
@@ -34,19 +35,18 @@ public class MorseCodeTree implements LinkedConverterTreeInterface<String>{
             } else {
                 root.right = new TreeNode<>(letter);
             }
+            return;
         }
         addNode(code.charAt(0) == '.' ? root.left : root.right, code.substring(1), letter);
     }
 
     @Override
     public String fetch(String code) {
-        System.out.println("try");
         return fetchNode(root, code);
     }
 
     @Override
     public String fetchNode(TreeNode<String> root, String code) {
-        System.out.println("traverse");
         if(code.length() == 1){
             return code.charAt(0) == '.' ? root.left.getData() : root.right.getData();
         }
@@ -59,7 +59,7 @@ public class MorseCodeTree implements LinkedConverterTreeInterface<String>{
     }
 
     @Override
-    public LinkedConverterTreeInterface update() throws UnsupportedOperationException {
+    public LinkedConverterTreeInterface<String> update() throws UnsupportedOperationException {
         throw new UnsupportedOperationException();
     }
 
@@ -85,9 +85,7 @@ public class MorseCodeTree implements LinkedConverterTreeInterface<String>{
         insert("....", "h");
         insert("...-", "v");
         insert("..-.", "f");
-        insert("", "");
         insert(".-..", "l");
-        insert("", "");
         insert(".--.", "p");
         insert(".---", "j");
         insert("-...", "b");
@@ -96,8 +94,6 @@ public class MorseCodeTree implements LinkedConverterTreeInterface<String>{
         insert("-.--", "y");
         insert("--..", "z");
         insert("--.-", "q");
-        insert("", "");
-        insert("", "");
     }
 
 

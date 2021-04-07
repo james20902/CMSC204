@@ -36,8 +36,8 @@ Assignments/Assignment1/NoDigitException.java
  Assignments.Assignment1.NoDigitException
 Labs/Lab2/DataSetGen.java
  Labs.Lab2.DataSetGen
-Assignments/Assignment5/LinkedConverterTreeInterface.java
- Assignments.Assignment5.LinkedConverterTreeInterface
+Assignments/Assignment5/MorseCodeMain.java
+ Assignments.Assignment5.MorseCodeMain
 Assignments/Assignment2/QueueInterface.java
  Assignments.Assignment2.QueueInterface
 Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
@@ -53,14 +53,14 @@ Labs/Lab2/BaseballPlayer.java
  Labs.Lab2.BaseballPlayer
 Assignments/Assignment2/InvalidNotationFormatException.java
  Assignments.Assignment2.InvalidNotationFormatException
-Assignments/Assignment5/MorseCodeTree.java
- Assignments.Assignment5.MorseCodeTree
+Assignments/Assignment5/LinkedConverterTreeInterface.java
+ Assignments.Assignment5.LinkedConverterTreeInterface
 Assignments/Assignment1/PasswordDriverFX.java
  Assignments.Assignment1.PasswordDriverFX
 Labs/Lab5/HashingLab.java
  Labs.Lab5.HashingLab
-Assignments/Assignment5/TreeNode.java
- Assignments.Assignment5.TreeNode
+Assignments/Assignment5/MorseCodeConverterTest.java
+ Assignments.Assignment5.MorseCodeConverterTest
 Assignments/Assignment4/CourseDBStructure.java
  Assignments.Assignment4.CourseDBStructure
 Assignments/Assignment1/WeakPasswordException.java
@@ -93,22 +93,24 @@ Assignments/Assignment4/CourseDBStructureTest.java
  Assignments.Assignment4.CourseDBStructureTest
 Labs/Lab4/ArraySumDriver.java
  Labs.Lab4.ArraySumDriver
-Assignments/Assignment4/CourseDBManager_GFA_Test.java
- Assignments.Assignment4.CourseDBManager_GFA_Test
-Assignments/Assignment3/SortedDoubleLinkedListTest.java
- Assignments.Assignment3.SortedDoubleLinkedListTest
- Assignments.Assignment3.SortedDoubleLinkedListTest$Car
- Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
- Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
- Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
+Assignments/Assignment5/MorseCodeDriverFX.java
+ Assignments.Assignment5.MorseCodeDriverFX
+Assignments/Assignment3/BasicDoubleLinkedList_STUDENT_Test.java
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$Matrix
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$MatrixComparator
 Assignments/Assignment1/NoSpecialCharacterException.java
  Assignments.Assignment1.NoSpecialCharacterException
 Labs/Lab2/BankAccount.java
  Labs.Lab2.BankAccount
 Labs/Lab2/Measurable.java
  Labs.Lab2.Measurable
-Main.java
- Main
+Assignments/Assignment3/SortedDoubleLinkedListTest.java
+ Assignments.Assignment3.SortedDoubleLinkedListTest
+ Assignments.Assignment3.SortedDoubleLinkedListTest$Car
+ Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
 Assignments/Assignment3/BasicDoubleLinkedList.java
  Assignments.Assignment3.BasicDoubleLinkedList
  Assignments.Assignment3.BasicDoubleLinkedList$1
@@ -140,12 +142,10 @@ Assignments/Assignment2/StackOverflowException.java
  Assignments.Assignment2.StackOverflowException
 Assignments/Assignment3/SortedDoubleLinkedList.java
  Assignments.Assignment3.SortedDoubleLinkedList
-Assignments/Assignment3/BasicDoubleLinkedList_STUDENT_Test.java
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$Matrix
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$MatrixComparator
 Assignments/Assignment1/NoLowerAlphaException.java
  Assignments.Assignment1.NoLowerAlphaException
+Assignments/Assignment4/CourseDBManager_GFA_Test.java
+ Assignments.Assignment4.CourseDBManager_GFA_Test
 Labs/Lab3/GradeBook.java
  Labs.Lab3.GradeBook
 Assignments/Assignment1/PasswordCheckerTestPublic.java
@@ -156,13 +156,13 @@ Assignments/Assignment2/NotationStackTest.java
  Assignments.Assignment2.NotationStackTest
 Assignments/Assignment2/StackInterface.java
  Assignments.Assignment2.StackInterface
-Assignments/Assignment5/MorseCodeDriverFX.java
- Assignments.Assignment5.MorseCodeDriverFX
-Assignments/Assignment5/MorseCodeMain.java
- Assignments.Assignment5.MorseCodeMain
-Assignments/Assignment5/MorseCodeConverterTest.java
- Assignments.Assignment5.MorseCodeConverterTest
 Assignments/Assignment5/MorseCodeConverter_GFA_Test.java
  Assignments.Assignment5.MorseCodeConverter_GFA_Test
+Assignments/Assignment5/TreeNode.java
+ Assignments.Assignment5.TreeNode
+Main.java
+ Main
+Assignments/Assignment5/MorseCodeTree.java
+ Assignments.Assignment5.MorseCodeTree
 Assignments/Assignment5/MorseCodeConverter.java
  Assignments.Assignment5.MorseCodeConverter
