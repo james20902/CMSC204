@@ -57,7 +57,18 @@ public class MorseCodeConverterTest {
 		getFile("DaisyDaisy.txt");
 		String converter2 = MorseCodeConverter.convertToEnglish(inputFile);
 		assertEquals(test2,converter2);
+	}
 
+	@Test
+	public void testConvertToEnglishStringAlternate(){
+		String input = ".. / .... --- .--. . / - .... .. ... / -.. --- . ... -. - / . -..- .--. .-.. --- -.. .";
+		assertEquals("i hope this doesnt explode", MorseCodeConverter.convertToEnglish(input));
+	}
+
+	@Test
+	public void testConvertToEnglishFileAlternate() throws FileNotFoundException {
+		getFile("howDoILoveThee.txt");
+		assertEquals("how do i love thee let me count the ways", MorseCodeConverter.convertToEnglish(inputFile));
 	}
 	
 	public void getFile(String in) throws FileNotFoundException {		
