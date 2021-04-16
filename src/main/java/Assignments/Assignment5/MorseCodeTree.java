@@ -83,7 +83,7 @@ public class MorseCodeTree implements LinkedConverterTreeInterface<String>{
      * Recursive method for reading node data by code traversal
      * @param root the root of the tree for this particular recursive instance of addNode
      * @param code the code for this particular recursive instance of fetchNode
-     * @return
+     * @return data at node after traversal
      */
     @Override
     public String fetchNode(TreeNode<String> root, String code) {

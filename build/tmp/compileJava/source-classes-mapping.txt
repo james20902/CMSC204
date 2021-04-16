@@ -53,8 +53,8 @@ Labs/Lab2/BaseballPlayer.java
  Labs.Lab2.BaseballPlayer
 Assignments/Assignment2/InvalidNotationFormatException.java
  Assignments.Assignment2.InvalidNotationFormatException
-Main.java
- Main
+Assignments/Assignment5/MorseCodeConverter_GFA_Test.java
+ Assignments.Assignment5.MorseCodeConverter_GFA_Test
 Assignments/Assignment1/PasswordDriverFX.java
  Assignments.Assignment1.PasswordDriverFX
 Labs/Lab5/HashingLab.java
@@ -154,17 +154,17 @@ Assignments/Assignment1/PasswordCheckerTestPublic.java
  Assignments.Assignment1.PasswordCheckerTestPublic$2
 Assignments/Assignment5/MorseCodeMain.java
  Assignments.Assignment5.MorseCodeMain
-Assignments/Assignment5/MorseCodeConverter.java
- Assignments.Assignment5.MorseCodeConverter
-Assignments/Assignment5/MorseCodeTree.java
- Assignments.Assignment5.MorseCodeTree
-Assignments/Assignment5/LinkedConverterTreeInterface.java
- Assignments.Assignment5.LinkedConverterTreeInterface
 Assignments/Assignment5/TreeNode.java
  Assignments.Assignment5.TreeNode
 Assignments/Assignment5/MorseCodeConverterTest.java
  Assignments.Assignment5.MorseCodeConverterTest
-Assignments/Assignment5/MorseCodeConverter_GFA_Test.java
- Assignments.Assignment5.MorseCodeConverter_GFA_Test
+Assignments/Assignment5/LinkedConverterTreeInterface.java
+ Assignments.Assignment5.LinkedConverterTreeInterface
 Assignments/Assignment5/MorseCodeTree_STUDENT_Test.java
  Assignments.Assignment5.MorseCodeTree_STUDENT_Test
+Assignments/Assignment5/MorseCodeConverter.java
+ Assignments.Assignment5.MorseCodeConverter
+Assignments/Assignment5/MorseCodeTree.java
+ Assignments.Assignment5.MorseCodeTree
+Main.java
+ Main

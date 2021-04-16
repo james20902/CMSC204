@@ -6,7 +6,8 @@ import Labs.Lab7.HeapSort;
 public class Main {
 
     public static void main(String[] args){
-        MorseCodeDriverFX.main(args);
+//        MorseCodeDriverFX.main(args);
+        System.out.println("hello /t world");
     }
 
 }
