@@ -2,9 +2,16 @@ package Assignments.Assignment6;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Set;
 
 public class Graph implements GraphInterface<Town, Road>{
+
+    HashMap<String, HashMap<String, Town>> map;
+
+    public Graph(){
+        map = new HashMap<>();
+    }
 
     public void populateTownGraph(File file){
 
