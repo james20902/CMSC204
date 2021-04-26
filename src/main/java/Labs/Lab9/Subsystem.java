@@ -7,55 +7,67 @@ public abstract class Subsystem implements Runnable{
 
     private Thread worker;
     private final AtomicBoolean alive = new AtomicBoolean(false);
-    private final ExecutorService executor;
 
-    private long delay;
-    private int priority;
+    private final long delay;
+    private final boolean critical;
     private final long cleanUpTimeMilliseconds;
+    public final String className = getClass().getSimpleName();
 
     public Subsystem(long milliseconds){
         this(milliseconds, Thread.NORM_PRIORITY);
     }
 
     public Subsystem(long milliseconds, int priority){
-        this(milliseconds, priority, false, 5);
+        this(milliseconds, priority, false, 500);
     }
 
     public Subsystem(long milliseconds, int priority, boolean critical, long cleanUpTimeMilliseconds){
         this.delay = milliseconds;
-        this.priority = priority;
+        this.critical = critical;
         this.cleanUpTimeMilliseconds = cleanUpTimeMilliseconds;
 
-        executor = Executors.newSingleThreadExecutor();
         worker = new Thread(this);
-        worker.setDaemon(!critical);
-        worker.setPriority(this.priority);
-
+        worker.setDaemon(!this.critical);
+        worker.setPriority(priority);
     }
 
-    //todo, do i want to have the worker be managed by an executor or just have the executor for start/stop timeout
-    public synchronized void start(){
+    public synchronized boolean start(){
+        if(worker.isAlive()){
+            System.out.println("subsystem is already running: " + className);
+        }
         alive.set(true);
         init();
-        executor.submit(worker);
+        worker.start();
+        return worker.isAlive();
     }
 
     public synchronized void shutdown(){
         alive.set(false);
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        Future<Boolean> future = executor.submit(this::cleanUp);
         try {
-            if(executor.awaitTermination(cleanUpTimeMilliseconds, TimeUnit.MILLISECONDS)){
-                executor.shutdown();
-            } else {
-                System.out.println("something went wrong in the shutdown request for subsystem: " + getClass().getSimpleName());
-                executor.shutdownNow();
+            if(!future.get(cleanUpTimeMilliseconds, TimeUnit.MILLISECONDS)){
+                System.out.println("something went wrong during shutdown execution!");
             }
+        } catch (ExecutionException e) {
+            System.out.println("something went wrong with execution");
+            e.printStackTrace();
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            System.out.println("subsystem was interrupted during shutdown, this should not happen!");
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            System.out.println("subsystem timed out!");
+            e.printStackTrace();
         }
+        executor.shutdownNow();
     }
 
     public synchronized boolean isAlive(){
         return alive.get();
+    }
+
+    public boolean isCritical(){
+        return critical;
     }
 
 
@@ -65,20 +77,23 @@ public abstract class Subsystem implements Runnable{
             try {
                 delayedLoop();
             } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
+                e.printStackTrace();
+                shutdown();
             }
         }
     }
 
     private void delayedLoop() throws InterruptedException {
-        loop();
+        if(!loop()){
+            throw new InterruptedException("iteration in loop failed for subsystem: " + className);
+        }
         Thread.sleep(delay);
     }
 
-    public abstract void init();
+    public abstract boolean init();
 
-    public abstract void loop();
+    public abstract boolean loop();
 
-    public abstract void cleanUp();
+    public abstract boolean cleanUp();
 
 }

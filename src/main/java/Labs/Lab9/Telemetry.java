@@ -1,7 +1,5 @@
 package Labs.Lab9;
 
-import java.util.concurrent.ExecutionException;
-
 public class Telemetry extends Subsystem {
 
     public Telemetry(){
@@ -9,23 +7,21 @@ public class Telemetry extends Subsystem {
     }
 
     @Override
-    public void init() {
+    public boolean init() {
         System.out.println("telemetry started");
+        return true;
     }
 
     @Override
-    public void loop() {
+    public boolean loop() {
         System.out.println("telemetry packet sent");
+        return false;
     }
 
     @Override
-    public void cleanUp() {
-        try {
-            //whoops
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public boolean cleanUp() {
+        //remove this trycatch THIS IS JUST FOR WATCHDOG TESTING
         System.out.println("telemetry subsystem shutting down");
+        return true;
     }
 }
