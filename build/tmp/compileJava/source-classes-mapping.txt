@@ -14,6 +14,8 @@ Assignments/Assignment6/TownGraphManagerInterface.java
  Assignments.Assignment6.TownGraphManagerInterface
 Labs/Lab4/ArraySum.java
  Labs.Lab4.ArraySum
+Assignments/Assignment1/NoLowerAlphaException.java
+ Assignments.Assignment1.NoLowerAlphaException
 Assignments/Assignment4/CourseDBStructureInterface.java
  Assignments.Assignment4.CourseDBStructureInterface
 Assignments/Assignment6/TownGraphManagerTest.java
@@ -42,8 +44,6 @@ Assignments/Assignment6/Graph.java
  Assignments.Assignment6.Graph
 Assignments/Assignment1/PasswordChecker_GFA_Test.java
  Assignments.Assignment1.PasswordChecker_GFA_Test
-Assignments/Assignment4/CourseDBManager_GFA_Test.java
- Assignments.Assignment4.CourseDBManager_GFA_Test
 Assignments/Assignment1/NoDigitException.java
  Assignments.Assignment1.NoDigitException
 Labs/Lab2/DataSetGen.java
@@ -52,8 +52,6 @@ Assignments/Assignment5/LinkedConverterTreeInterface.java
  Assignments.Assignment5.LinkedConverterTreeInterface
 Assignments/Assignment6/Road.java
  Assignments.Assignment6.Road
-Labs/Lab9/Control.java
- Labs.Lab9.Control
 Assignments/Assignment2/QueueInterface.java
  Assignments.Assignment2.QueueInterface
 Assignments/Assignment3/SortedDoubleLinkedList_GFA_Test.java
@@ -75,6 +73,12 @@ Assignments/Assignment2/InvalidNotationFormatException.java
  Assignments.Assignment2.InvalidNotationFormatException
 Assignments/Assignment5/MorseCodeTree.java
  Assignments.Assignment5.MorseCodeTree
+Assignments/Assignment3/SortedDoubleLinkedListTest.java
+ Assignments.Assignment3.SortedDoubleLinkedListTest
+ Assignments.Assignment3.SortedDoubleLinkedListTest$Car
+ Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
+ Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
 Assignments/Assignment1/PasswordDriverFX.java
  Assignments.Assignment1.PasswordDriverFX
 Assignments/Assignment6/FXMainPane.java
@@ -93,14 +97,16 @@ Assignments/Assignment3/DoubleLinkedListDriver.java
  Assignments.Assignment3.DoubleLinkedListDriver$StringComparator
 Assignments/Assignment4/CourseDBGUI.java
  Assignments.Assignment4.CourseDBGUI
-Assignments/Assignment1/NoLowerAlphaException.java
- Assignments.Assignment1.NoLowerAlphaException
 Assignments/Assignment2/QueueOverflowException.java
  Assignments.Assignment2.QueueOverflowException
 Assignments/Assignment2/NotationTest.java
  Assignments.Assignment2.NotationTest
 Assignments/Assignment2/NotationQueueTest.java
  Assignments.Assignment2.NotationQueueTest
+Assignments/Assignment3/BasicDoubleLinkedList_STUDENT_Test.java
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$Matrix
+ Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$MatrixComparator
 Assignments/Assignment2/QueueUnderflowException.java
  Assignments.Assignment2.QueueUnderflowException
 Assignments/Assignment3/BasicDoubleLinkedListTest.java
@@ -123,6 +129,8 @@ Assignments/Assignment5/MorseCodeConverter.java
  Assignments.Assignment5.MorseCodeConverter
 Assignments/Assignment5/MorseCodeMain.java
  Assignments.Assignment5.MorseCodeMain
+Labs/Lab9/Car.java
+ Labs.Lab9.Car
 Assignments/Assignment1/NoSpecialCharacterException.java
  Assignments.Assignment1.NoSpecialCharacterException
 Labs/Lab2/BankAccount.java
@@ -154,18 +162,6 @@ Assignments/Assignment4/CourseDBElement.java
  Assignments.Assignment4.CourseDBElement
 Labs/Lab7/HeapSort.java
  Labs.Lab7.HeapSort
-Assignments/Assignment3/SortedDoubleLinkedListTest.java
- Assignments.Assignment3.SortedDoubleLinkedListTest
- Assignments.Assignment3.SortedDoubleLinkedListTest$Car
- Assignments.Assignment3.SortedDoubleLinkedListTest$CarComparator
- Assignments.Assignment3.SortedDoubleLinkedListTest$DoubleComparator
- Assignments.Assignment3.SortedDoubleLinkedListTest$StringComparator
-Labs/Lab9/Sensors.java
- Labs.Lab9.Sensors
-Assignments/Assignment3/BasicDoubleLinkedList_STUDENT_Test.java
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$Matrix
- Assignments.Assignment3.BasicDoubleLinkedList_STUDENT_Test$MatrixComparator
 Assignments/Assignment6/TownGraphManager.java
  Assignments.Assignment6.TownGraphManager
 Assignments/Assignment4/FXMainPane.java
@@ -196,13 +192,13 @@ Assignments/Assignment2/StackInterface.java
  Assignments.Assignment2.StackInterface
 Assignments/Assignment5/MorseCodeDriverFX.java
  Assignments.Assignment5.MorseCodeDriverFX
-Labs/Lab9/Telemetry.java
- Labs.Lab9.Telemetry
-Labs/Lab9/Main.java
- Labs.Lab9.Main
-Labs/Lab9/Subsystem.java
- Labs.Lab9.Subsystem
-Labs/Lab9/Rocket.java
- Labs.Lab9.Rocket
-Labs/Lab9/Watchdog.java
- Labs.Lab9.Watchdog
+Assignments/Assignment4/CourseDBManager_GFA_Test.java
+ Assignments.Assignment4.CourseDBManager_GFA_Test
+Labs/Lab9/CarQueue.java
+ Labs.Lab9.CarQueue
+ Labs.Lab9.CarQueue$1QueueRun
+Labs/Lab9/CarPanel.java
+ Labs.Lab9.CarPanel
+ Labs.Lab9.CarPanel$1AnimationRunnable
+Labs/Lab9/CarFrame.java
+ Labs.Lab9.CarFrame
