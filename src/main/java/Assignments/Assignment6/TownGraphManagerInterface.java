@@ -60,7 +60,7 @@ public interface TownGraphManagerInterface {
 	 * Deletes a road from the graph
 	 * @param town1 name of town 1 (lastname, firstname)
 	 * @param town2 name of town 2 (lastname, firstname)
-	 * @param roadName the road name
+	 * @param road the road name
 	 * @return true if the road was successfully deleted, false if not
 	 */
 	public boolean deleteRoadConnection(String town1, String town2, String road);
